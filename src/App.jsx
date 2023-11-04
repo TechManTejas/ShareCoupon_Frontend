@@ -27,13 +27,14 @@ const authenticatedRoutes = () => {
 function App() {
 
   const [routes, setRoutes] = useState(unauthenticatedRoutes)
+  const [accessToken] = useState(localStorage.getItem("share-coupon-access-token"))
 
   useEffect(() => {
     if (localStorage.getItem("share-coupon-access-token"))
       setRoutes(() => authenticatedRoutes)
     else
       setRoutes(() => unauthenticatedRoutes)
-  }, [])
+  }, [accessToken])
 
   return (
     <BrowserRouter>
