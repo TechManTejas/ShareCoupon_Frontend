@@ -69,14 +69,14 @@ export default function CouponEditModal({ hideModal, couponId }) {
             <Input.TextArea />
           </Form.Item>
     
-          <Form.Item
+          {/* <Form.Item
             label="Image"
             name="image"
           >
             <Upload name="logo" listType="picture">
               <Button icon={<UploadOutlined />}>Upload</Button>
             </Upload>
-          </Form.Item>
+          </Form.Item> */}
     
           <Form.Item
             label="Category"

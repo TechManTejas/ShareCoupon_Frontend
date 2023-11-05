@@ -1,5 +1,5 @@
 import { Form, Input, Upload, Button } from 'antd';
-import { UploadOutlined } from '@ant-design/icons';
+// import { UploadOutlined } from '@ant-design/icons';
 import axios from 'axios';
 
 
@@ -46,14 +46,14 @@ export default function CouponCreateModal({hideModal}) {
         <Input.TextArea />
       </Form.Item>
 
-      <Form.Item
+      {/* <Form.Item
         label="Image"
         name="image"
       >
         <Upload name="logo" listType="picture">
           <Button icon={<UploadOutlined />}>Upload</Button>
         </Upload>
-      </Form.Item>
+      </Form.Item> */}
 
       <Form.Item
         label="Category"
